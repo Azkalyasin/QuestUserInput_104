@@ -39,7 +39,7 @@ fun FormDataDiri(modifier: Modifier
     var alamat by remember { mutableStateOf("") }
     var jenis by remember { mutableStateOf("") }
 
-    var gender: List<String> = listOf("laki-laki", "perempuan")
+    val gender: List<String> = listOf("laki-laki", "perempuan")
 
     Column(modifier = Modifier.padding(top = 50.dp),
         verticalArrangement = Arrangement.Top,
@@ -101,5 +101,14 @@ fun FormDataDiri(modifier: Modifier
         ) {
             Text(stringResource(R.string.submit))
         }
+        Divider(
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimen.pading_medium), top = dimensionResource(
+                    R.dimen.pading_medium
+                )
+            ),
+            thickness = dimensionResource(R.dimen.divider_tipis),
+            color = Color.DarkGray
+        )
     }
 }
