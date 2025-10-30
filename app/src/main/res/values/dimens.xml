@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pading_small">10dp</dimen>
+    <dimen name="pading_medium">30p</dimen>
+    <dimen name="divider_tipis">1dp</dimen>
+</resources>
