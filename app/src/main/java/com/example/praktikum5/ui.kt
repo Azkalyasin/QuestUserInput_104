@@ -5,11 +5,14 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
-import androidx.compose.material3.Divider
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
@@ -25,7 +28,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import org.xmlpull.v1.sax2.Driver
+
 
 
 @Composable
@@ -44,7 +47,7 @@ fun FormDataDiri(modifier: Modifier
     Column(modifier = Modifier.padding(top = 50.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    ) {
         OutlinedTextField(
             value = textNama,
             singleLine = true,
@@ -81,7 +84,7 @@ fun FormDataDiri(modifier: Modifier
             }
 
         )
-        Divider(
+        HorizontalDivider(
             modifier = Modifier.padding(
                 bottom = dimensionResource(R.dimen.pading_medium), top = dimensionResource(
                     R.dimen.pading_medium
@@ -101,7 +104,7 @@ fun FormDataDiri(modifier: Modifier
         ) {
             Text(stringResource(R.string.submit))
         }
-        Divider(
+        HorizontalDivider(
             modifier = Modifier.padding(
                 bottom = dimensionResource(R.dimen.pading_medium), top = dimensionResource(
                     R.dimen.pading_medium
@@ -110,5 +113,13 @@ fun FormDataDiri(modifier: Modifier
             thickness = dimensionResource(R.dimen.divider_tipis),
             color = Color.DarkGray
         )
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.Black),
+            modifier = Modifier
+                .height(height = 100.dp)
+                .width(width = 300.dp)
+        ) {
+        }
     }
 }
