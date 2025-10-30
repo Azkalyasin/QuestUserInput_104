@@ -21,5 +21,5 @@ fun FormDataDiri(modifier: Modifier
     var alamat by remember { mutableStateOf("") }
     var jenis by remember { mutableStateOf("") }
 
-
+    var gender: List<String> = listOf("laki-laki", "perempuan")
 }
