@@ -61,6 +61,11 @@ fun Form(modifier: Modifier = Modifier) {
             ),
         contentAlignment = Alignment.TopCenter
     ){
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier.fillMaxWidth()
+        ){
 
+        }
     }
 }
