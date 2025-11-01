@@ -65,7 +65,18 @@ fun Form(modifier: Modifier = Modifier) {
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.fillMaxWidth()
         ){
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(
+                        Brush.horizontalGradient(
+                            colors = listOf(Color(0xFF9C27B0), Color(0xFFE040FB))
+                        )
+                    )
+                    .padding(vertical = 24.dp)
+            ) {
 
+            }
         }
     }
 }
