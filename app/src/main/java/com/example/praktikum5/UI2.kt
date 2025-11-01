@@ -49,4 +49,18 @@ fun Form(modifier: Modifier = Modifier) {
 
     val gender = listOf("Laki-laki", "Perempuan")
     val status = listOf("Janda", "Lajang", "Duda")
+
+    Box(
+        modifier = Modifier
+            .padding(top = 30.dp)
+            .fillMaxSize()
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(Color(0xFFE1BEE7), Color.White)
+                )
+            ),
+        contentAlignment = Alignment.TopCenter
+    ){
+
+    }
 }
