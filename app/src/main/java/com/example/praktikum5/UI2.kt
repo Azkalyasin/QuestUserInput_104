@@ -109,7 +109,7 @@ fun Form(modifier: Modifier = Modifier) {
                             .fillMaxWidth()
                             .padding(vertical = 8.dp)
                     )
-
+                    Spacer(modifier = Modifier.height(16.dp))
                 }
             }
         }
