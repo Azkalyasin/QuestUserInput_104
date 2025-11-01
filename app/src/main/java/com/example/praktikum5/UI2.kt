@@ -111,6 +111,19 @@ fun Form(modifier: Modifier = Modifier) {
                     )
                     Spacer(modifier = Modifier.height(16.dp))
                     Text(text = "JENIS KELAMIN", fontWeight = FontWeight.Bold)
+                    gender.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item }
+                                )
+                                .padding(vertical = 2.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+
+                        }
+                    }
                 }
             }
         }
