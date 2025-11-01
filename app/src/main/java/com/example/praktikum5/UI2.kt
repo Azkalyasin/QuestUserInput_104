@@ -85,6 +85,16 @@ fun Form(modifier: Modifier = Modifier) {
                 )
 
             }
+            Card (
+                modifier = Modifier
+                    .padding(20.dp)
+                    .fillMaxWidth(0.9f),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                shape = RoundedCornerShape(20.dp),
+                elevation = CardDefaults.cardElevation(8.dp)
+            ){
+
+            }
         }
     }
 }
