@@ -129,6 +129,7 @@ fun Form(modifier: Modifier = Modifier) {
                         }
                     }
                     Spacer(modifier = Modifier.height(16.dp))
+                    Text(text = "STATUS PERKAWINAN", fontWeight = FontWeight.Bold)
                 }
             }
         }
