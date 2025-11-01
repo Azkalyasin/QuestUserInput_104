@@ -93,7 +93,24 @@ fun Form(modifier: Modifier = Modifier) {
                 shape = RoundedCornerShape(20.dp),
                 elevation = CardDefaults.cardElevation(8.dp)
             ){
+                Column(
+                    modifier = Modifier
+                        .padding(20.dp)
+                        .fillMaxWidth(),
+                    horizontalAlignment = Alignment.Start
+                ){
+                    Text(text = "NAMA LENGKAP", fontWeight = FontWeight.Bold)
+                    OutlinedTextField(
+                        value = textNama,
+                        onValueChange = { textNama = it },
+                        label = { Text("Isian nama lengkap") },
+                        singleLine = true,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 8.dp)
+                    )
 
+                }
             }
         }
     }
