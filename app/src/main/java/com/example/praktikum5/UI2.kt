@@ -140,7 +140,11 @@ fun Form(modifier: Modifier = Modifier) {
                                 .padding(vertical = 2.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-
+                            RadioButton(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            )
+                            Text(text = item, modifier = Modifier.padding(start = 8.dp))
                         }
                     }
 
