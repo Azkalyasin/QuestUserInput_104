@@ -110,6 +110,7 @@ fun Form(modifier: Modifier = Modifier) {
                             .padding(vertical = 8.dp)
                     )
                     Spacer(modifier = Modifier.height(16.dp))
+                    Text(text = "JENIS KELAMIN", fontWeight = FontWeight.Bold)
                 }
             }
         }
